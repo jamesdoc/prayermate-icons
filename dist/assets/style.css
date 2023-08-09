@@ -1,0 +1,159 @@
+:root {
+  --background: #faa619;
+  --default: #ffcd74;
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html,
+body {
+  font-family: var(--system-ui);
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+
+.preview {
+  width: 512px;
+  height: 512px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview svg {
+  max-width: 50%;
+  fill: #ffcd74;
+}
+
+.colourPicker label {
+  display: block;
+}
+
+.btn-colorPicker {
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  border: 0;
+  text-indent: -9999999px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.iconSearch {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffc45e;
+  border-radius: 4px;
+}
+
+.iconSearch__input {
+  width: 100%;
+  padding: 5px;
+  margin: 1rem 1rem 0;
+  background: white;
+  border: 0;
+  border-radius: 4px;
+}
+
+.iconSearch__input:focus {
+  background: #f6d49b;
+}
+
+.iconSearch__options {
+  max-height: 200px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 5px;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.icon-btn {
+  border: 0;
+  background: transparent;
+}
+
+.icon-btn svg {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-btn:hover {
+  background: #bddfff;
+}
+
+.options {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.options__group {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 650px) {
+  .header {
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr clamp(33%, 20em, 100%);
+  }
+}
+
+.footer {
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 0.825rem;
+  background: white;
+}
+
+.footer__nav {
+  display: block;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+
+.footer__nav li {
+  display: inline;
+}
+
+.footer__nav li:after {
+  content: " | ";
+}
+
+.footer__nav li:last-child:after {
+  content: "";
+}
+
+.btn {
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c1c1c1;
+}
+
+.btn-save {
+}
+
+.hex-selector {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+}
