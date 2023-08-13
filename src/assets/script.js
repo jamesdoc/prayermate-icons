@@ -76,7 +76,7 @@ btnSave.addEventListener("click", function (e) {
 });
 
 txtSearch.addEventListener("keyup", function (e) {
-  const searchValue = e.target.value;
+  const searchValue = e.target.value.toLowerCase();
   console.log(searchValue);
 
   iconPickers.forEach((iconBtn) => {
