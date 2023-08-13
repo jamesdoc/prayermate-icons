@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy(".nojekyll");
 
   eleventyConfig.on("afterBuild", () => {
     return esbuild.build({
