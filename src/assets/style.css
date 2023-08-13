@@ -264,3 +264,24 @@ input[type="color"]::-webkit-color-swatch {
   width: 50%;
   height: 50%;
 }
+
+@media (min-width: 915px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btnGroup {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    gap: 2rem;
+  }
+
+  .options {
+    padding-top: 2rem;
+  }
+
+  .options__group {
+    margin-bottom: 2rem;
+  }
+}
